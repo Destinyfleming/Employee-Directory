@@ -6,7 +6,10 @@ import Col from 'react-bootstrap/Col';
 import React, { useState, useEffect } from 'react';
 
 function ContainerRows (){
-    const [user, setUser] = useState('');
+    const [firstName, setFirstName] = useState('1');
+    const [lastName, setLastName] = useState('2');
+    const [email, setEmail] = useState('3');
+    const [number, setNumber] = useState('4');
 
     useEffect(() => {
        loadEmployyees()
@@ -16,19 +19,23 @@ function ContainerRows (){
         API.getRandomEmployees()
         .then(res =>
             console.log(res))
+
     }
      
     return(
     <>
     <Container>
      <Row>
-        <Col>1 of 2</Col>
-        <Col>2 of 2</Col>
+        <Col>First Name</Col>
+        <Col>Last Name</Col>
+        <Col>Email</Col>
+        <Col>Cell Number</Col>
      </Row>
      <Row>
-        <Col>1 of 3</Col>
-        <Col>2 of 3</Col>
-        <Col>3 of 3</Col>
+        <Col>{firstName}</Col>
+        <Col>{lastName}</Col>
+        <Col>{email}</Col>
+        <Col>{number}</Col>
      </Row>
     </Container>
     </>
