@@ -1,5 +1,6 @@
 import React from "react";
 import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 function SearchBar (){
     //pass in props
@@ -7,9 +8,9 @@ function SearchBar (){
     return(
     <Form>
      <Form.Group controlId="exampleForm.ControlInput1">
-        <Form.Label>Employee name</Form.Label>
         <Form.Control type="name" placeholder="Employee Name" />
      </Form.Group>
+     <Button>Search</Button>
     </Form>
 )};
 

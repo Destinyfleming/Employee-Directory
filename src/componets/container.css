@@ -1,0 +1,14 @@
+*{
+    background-color:rgba(3, 3, 126, 0.281);
+    color: #fffcfc;
+}
+.row{
+padding-top: 5px; 
+padding-right: 10px; 
+padding-bottom: 15px; 
+padding-left: 20px;
+border: 1px solid #fffcfc;
+}
+.top-row{
+    font-weight: bold;
+}
